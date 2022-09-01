@@ -1,0 +1,154 @@
+{% extends "components/Main.html" %}
+{% load static %}
+{% block content %}
+<!--INNER BANNER START-->
+<div id="inner-banner">
+    <div class="container">
+      <div class="inner-banner-heading">
+        <h1>blog</h1>
+        <ol class="breadcrumb">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li class="active">blog</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!--INNER BANNER END-->
+  
+  <div id="main"> 
+    <!--BLOG SECTION START-->
+    <section class="blog-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 col-sm-8">
+            <div class="post-box">
+              <div class="frame"><img src="{% static 'images/blog-img-1.jpg' %}" alt="img"></div>
+              <div class="text-box"> <strong class="date">16 August 2016</strong>
+                <h2><a href="{% url 'blog-details' %}">The Lord, GOD Of Our Lifes</a></h2>
+                <p>Church tiam dictum Nunc enim Sed massa tellus aliquam, rhoncus venenatis quis suscipit ac libero. church aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos ptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeossociosqu ad litora torquent. </p>
+                <div class="btm-col">
+                  <div class="thumb"><img src="{% static 'images/blog-style-1-img-1.jpg' %}" alt="img"></div>
+                  <div class="text-col"> <strong class="title">Rona Thanki</strong> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Comment</a> <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>2 Share</a> </div>
+                </div>
+                <a href="{% url 'blog-details' %}" class="btn-style-1">raed more</a> </div>
+            </div>
+            <div class="post-box">
+              <div class="text-box">
+                <div class="broadcast-left-box">
+                  <div class="mp3-player-box">
+                    <audio preload="auto" controls>
+                      <source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+                      <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+                      <source src="audio/BlueDucks_FourFlossFiveSix.wav">
+                    </audio>
+                  </div>
+                </div>
+                <strong class="date">16 August 2016</strong>
+                <h2><a href="{% url 'blog-details' %}">Honor The God With Your Heart</a></h2>
+                <p>Church tiam dictum Nunc enim Sed massa tellus aliquam, rhoncus venenatis quis suscipit ac libero. church aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos ptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeossociosqu ad litora torquent. </p>
+                <div class="btm-col">
+                  <div class="thumb"><img src="{% static 'images/blog-style-1-img-1.jpg' %}" alt="img"></div>
+                  <div class="text-col"> <strong class="title">Rona Thanki</strong> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Comment</a> <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>2 Share</a> </div>
+                </div>
+                <a href="{% url 'blog-details' %}" class="btn-style-1">raed more</a> </div>
+            </div>
+            <div class="post-box">
+              <div class="frame-2"> <img src="{% static 'images/blog-img-3.jpg' %}" alt="img"> <a href="#" class="btn-play" data-toggle="modal" data-target="#myModal"><span class="icon-play-button"></span></a>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe src="https://player.vimeo.com/video/13467113?color=a30248&title=0&byline=0&portrait=0" style="width:100%; border:0; height:750px;"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-box"> <strong class="date">16 August 2016</strong>
+                <h2><a href="{% url 'blog-details' %}">The Lord, GOD Of Our Lifes</a></h2>
+                <p>Church tiam dictum Nunc enim Sed massa tellus aliquam, rhoncus venenatis quis suscipit ac libero. church aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos ptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeossociosqu ad litora torquent. </p>
+                <div class="btm-col">
+                  <div class="thumb"><img src="{% static 'images/blog-style-1-img-1.jpg' %}" alt="img"></div>
+                  <div class="text-col"> <strong class="title">Rona Thanki</strong> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Comment</a> <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>2 Share</a> </div>
+                </div>
+                <a href="{% url 'blog-details' %}" class="btn-style-1">raed more</a> </div>
+            </div>
+            <div class="post-box">
+              <div class="text-box"> <strong class="date">16 August 2016</strong>
+                <h2><a href="{% url 'blog-details' %}">Is Hope of Heaven Beautiful?</a></h2>
+                <a href="#" class="link">https://themeforest.net/user/crunchpress/portfolio</a>
+                <div class="btm-col">
+                  <div class="thumb"><img src="{% static 'images/blog-style-1-img-1.jpg' %}" alt="img"></div>
+                  <div class="text-col"> <strong class="title">Rona Thanki</strong> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Comment</a> <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>2 Share</a> </div>
+                </div>
+                <a href="{% url 'blog-details' %}" class="btn-style-1">raed more</a> </div>
+            </div>
+            <div class="post-box">
+              <div class="frame"><img src="{% static 'images/blog-img-2.jpg' %}" alt="img"></div>
+              <div class="text-box"> <strong class="date">16 August 2016</strong>
+                <h2><a href="{% url 'blog-details' %}">Pray for God to Satisfy Your Hearth</a></h2>
+                <p>Church tiam dictum Nunc enim Sed massa tellus aliquam, rhoncus venenatis quis suscipit ac libero. church aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos ptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeossociosqu ad litora torquent. </p>
+                <div class="btm-col">
+                  <div class="thumb"><img src="{% static 'images/blog-style-1-img-1.jpg' %}" alt="img"></div>
+                  <div class="text-col"> <strong class="title">Rona Thanki</strong> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Comment</a> <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>2 Share</a> </div>
+                </div>
+                <a href="{% url 'blog-details' %}" class="btn-style-1">raed more</a> </div>
+            </div>
+            <div class="post-box">
+              <div class="text-box"> <strong class="date">16 August 2016</strong>
+                <h2><a href="{% url 'blog-details' %}">Basics for Reading the Biblet</a></h2>
+                <blockquote>
+                  <p>Church tiam dictum Nunc enim Sed massa tellus aliquam, rhoncus venenatis quis suscipit ac libero. church aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos ptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeossociosqu ad litora torquent. </p>
+                </blockquote>
+                <div class="btm-col">
+                  <div class="thumb"><img src="{% static 'images/blog-style-1-img-1.jpg' %}" alt="img"></div>
+                  <div class="text-col"> <strong class="title">Rona Thanki</strong> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Comment</a> <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>2 Share</a> </div>
+                </div>
+                <a href="{% url 'blog-details' %}" class="btn-style-1">raed more</a> </div>
+            </div>
+            <!--PAGINATION START-->
+            <div class="pagination-box">
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li> <a href="#" aria-label="Previous"> <span aria-hidden="true">Previous </span> </a> </li>
+                  <li><a href="#">1</a></li>
+                  <li class="active"><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">....</a></li>
+                  <li> <a href="#" aria-label="Next"> <span aria-hidden="true">Next</span> </a> </li>
+                </ul>
+              </nav>
+            </div>
+            <!--PAGINATION END--> 
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <aside>
+              <div class="sidebar">
+                <div class="sidebar-box">
+                  <form action="#">
+                    <input type="text" placeholder="Search" required>
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </form>
+                </div>
+                <div class="sidebar-box">
+                  <h3>Follow @ Instagram</h3>
+                  <div class="instagram-box">
+                    <ul>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-1.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-2.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-3.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-4.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-5.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-6.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-7.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-8.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-9.jpg' %}" alt="img"></a></li>
+                    </ul>
+                  </div>
+                </div>
+{% endblock %}

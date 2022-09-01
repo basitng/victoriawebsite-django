@@ -1,0 +1,130 @@
+{% extends "components/Main.html" %}
+{% load static %}
+{% block content %}
+  
+  <!--INNER BANNER START-->
+  <div id="inner-banner">
+    <div class="container">
+      <div class="inner-banner-heading">
+        <h1>Sermon Detail</h1>
+        <ol class="breadcrumb">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li class="active">Sermon Detail</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!--INNER BANNER END-->
+  
+  <div id="main"> 
+    <!--SERMONS DETAIL START-->
+    <section class="sermons-detail">
+      <div class="container">
+        <div class="frame"><img src="{% static '{% static images/sermons-detail-img.jpg' %}" alt="img"></div>
+        <div class="text-box">
+          <h2>You Shall Not Bear False Witness against Your Neighbor.</h2>
+          <span>We exist to reach people far from God and lead them to an authentic relationship with Jesus.</span>
+          <p>Aenean arcu tortor, suscipit vitae, hendrerit condimentum, dapibus ac, nulla. Curabitur sit consectetuer ipsum dolor sit amet justo et sit amet justo consectetuer adipiscing elit.Maecenas porttitor neque eu sem nullam lectus neque, blandit quis mattis quis varius eu eros. Vivamus ads metus. Mauris at tellus at sapien.</p>
+          <p>tortor, suscipit vitae, hendrerit condimentum, dapibus ac, nulla. Curabitur sit consectetuer ipsum dolor sit amet justo et sit amet justo consectetuer adipiscing elit.Maecenas porttitor neque eu sem nullam lectus neque, blandit quis mattis quis varius eu eros. Vivamus ads metus. Mauris at tellus at.</p>
+          <p>suscipit vitae, hendrerit condimentum, dapibus ac, nulla. Curabitur sit consectetuer ipsum dolor sit amet justo et sit amet justo consectetuer adipiscing elit.Maecenas porttitor neque eu sem nullam lectus neque, blandit quis mattis quis varius eu eros. Vivamus ads metus. Mauris at tellus at.tortor, suscipit vitae, hendrerit condimentum, dapibus ac, nulla. Curabitur sit consectetuer ipsum dolor. </p>
+          <ul class="social">
+            <li><a href="#"><i aria-hidden="true" class="fa fa-play-circle"></i></a></li>
+            <li><a href="#"><i aria-hidden="true" class="fa fa-music"></i></a></li>
+            <li><a href="#"><i aria-hidden="true" class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#"><i aria-hidden="true" class="fa fa-download"></i></a></li>
+          </ul>
+          <div class="sermons-detail-row">
+            <div class="left-box">
+              <div class="holder"> <strong class="title">Details</strong>
+                <ul>
+                  <li> <span>Start:</span>
+                    <p>July 25 @ 10:30 am</p>
+                  </li>
+                  <li> <span>End:</span>
+                    <p>Aug 10 @ 8:pm</p>
+                  </li>
+                  <li> <span>Sermons Category:</span>
+                    <p>Charity for Poors</p>
+                  </li>
+                  <li> <span>Sermons Place:</span>
+                    <p>Lord Church</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="holder pull-right"> <strong class="title">Organizer</strong>
+                <ul>
+                  <li> <span>Place:</span>
+                    <p>Lord’s Church</p>
+                  </li>
+                  <li> <span>Phone:</span>
+                    <p>+660 252265866</p>
+                  </li>
+                  <li> <span>Emal:</span> <a href="mailto:">support@CrunchPres.com</a> </li>
+                  <li> <span>Website:</span> <a href="#">www.CrunchPress.com</a> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right-box">
+              <div id="map_contact_2" class="map_canvas active"></div>
+            </div>
+          </div>
+          <div class="sermons-detail-comment">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="comment-list">
+                  <h3>comments [ 3]</h3>
+                  <div class="media">
+                    <div class="media-left"> <a href="#"> <img alt="img" src="{% static 'images/comment-img-1.jpg' %}"> </a> </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">Maria fajita</h4>
+                      <span class="date">August 20, 2016 </span>
+                      <p>Aenean arcu tortor, suscipit vitae,Aenean arcu tortor, suscipit vitae,Aenean arcu  suscipit vitae,Aenean .</p>
+                      <a class="reply" href="#">Reply</a> </div>
+                  </div>
+                  <div class="media">
+                    <div class="media-left"> <a href="#"> <img alt="img" src="{% static 'images/comment-img-2.jpg' %}"> </a> </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">Clark Jhone</h4>
+                      <span class="date">August 18, 2016 </span>
+                      <p>Aenean arcu tortor, suscipit vitae,Aenean arcu tortor, suscipit vitae,Aenean arcu  suscipit vitae,Aenean .</p>
+                      <a class="reply" href="#">Reply</a>
+                      <div class="media">
+                        <div class="media-left"> <a href="#"> <img alt="img" src="{% static 'images/comment-img-3.jpg' %}"> </a> </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Kelly Khatai</h4>
+                          <span class="date">August 20, 2016 </span>
+                          <p>Aenean arcu tortor, suscipit vitae,Aenean arcu tortor, suscipit vitae,Aenean arcu  suscipit vitae,Aenean .</p>
+                          <a class="reply" href="#">Reply</a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="detail-comment-form">
+                  <h3>Leave a comment</h3>
+                  <form class="row" action="#">
+                    <div class="col-md-6">
+                      <input type="text" required placeholder="Name">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" required placeholder="Email">
+                    </div>
+                    <div class="col-md-12">
+                      <textarea placeholder="Comment" required rows="12" cols="12"></textarea>
+                    </div>
+                    <div class="col-md-12">
+                      <input type="submit" value="submit now">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--SERMONS DETAIL END--> 
+  </div>
+  
+{% endblock %}

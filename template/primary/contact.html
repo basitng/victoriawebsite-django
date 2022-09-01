@@ -1,0 +1,98 @@
+{% extends "components/Main.html" %}
+{% load static %}
+{% block content %}
+<!--INNER BANNER START-->
+<div id="inner-banner">
+    <div class="container">
+      <div class="inner-banner-heading">
+        <h1>Contact Us</h1>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">contact Us</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!--INNER BANNER END-->
+  
+  <div id="main"> 
+    <!--CONTACT PAGE START-->
+    <section class="contact-page">
+      <div class="map-box">
+        <div id="map_contact_1" class="map_canvas active"></div>
+        <div class="caption">
+          <h3>Send Us a Message</h3>
+          <form action="#" class="row">
+            <div class="col-md-6 col-sm-4">
+              <input type="text" placeholder="Name*" required>
+            </div>
+            <div class="col-md-6 col-sm-4">
+              <input type="text" placeholder="Email*" required>
+            </div>
+            <div class="col-md-12 col-sm-4">
+              <input type="text" placeholder="Subject*" required>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <textarea cols="10" rows="10" placeholder="Your Message"></textarea>
+            </div>
+            <div class="col-md-12">
+              <input value="Send" type="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="address-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-sm-6">
+              <div class="heading-left">
+                <h2>Contact info</h2>
+                <span>we remember </span> </div>
+              <ul>
+                <li> <span class="icon-placeholder"></span>
+                  <div class="text-box"> <strong class="title">Address</strong>
+                    <p>825 Jhon street,World Vision UK
+                      Opal Drive Fox Milne Milton MK15 0ZR </p>
+                  </div>
+                </li>
+                <li> <span class="icon-phone-call"></span>
+                  <div class="text-box"> <strong class="title">Phone number</strong>
+                    <p>+660 252265866 - Main Office </p>
+                  </div>
+                </li>
+                <li> <span class="icon-open-envelope"></span>
+                  <div class="text-box"> <strong class="title">Email</strong> <a href="mainto:">support@CrunchPres.com</a> <a href="mailto:">info@CrunchPress.uk</a> </div>
+                </li>
+                <li> <span class="icon-fax"></span>
+                  <div class="text-box"> <strong class="title">Fax Number</strong>
+                    <p>+660 652536336 - Fax</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <div class="frame"><img src="{% static 'images/contact-img.jpg' %}" alt="img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--CONTACT PAGE END--> 
+  </div>
+  
+  <!--FOOTER START-->
+  <footer id="footer"> 
+    <!--BROADCAST ROW START-->
+    <section class="broadcast-row">
+      <div class="container"> <a href="#" class="music"><i class="fa fa-music" aria-hidden="true"></i></a> <strong class="title">Live Broadcast : <span>Spirit and Soul</span></strong>
+        <div class="mp3-player-box">
+          <audio preload="auto" controls>
+            <source src="{% static 'audio/BlueDucks_FourFlossFiveSix.mp3' %}">
+            <source src="{% static 'audio/BlueDucks_FourFlossFiveSix.ogg' %}">
+            <source src="{% static 'audio/BlueDucks_FourFlossFiveSix.wav' %}">
+          </audio>
+        </div>
+        <a href="#" class="btn-download"><i class="fa fa-download" aria-hidden="true"></i></a> </div>
+    </section>
+    <!--BROADCAST ROW END--> 
+{% endblock %}

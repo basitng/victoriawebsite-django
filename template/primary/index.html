@@ -1,0 +1,222 @@
+{% extends "components/Main.html" %}
+{% load static %}
+{% block content %}
+{% include "components/Banner.html" %}
+<div id="wrapper">
+  <div id="main">
+    <section class="about-top-row">
+      <div class="container-fluid">
+        <div class="col-md-6">
+          <div class="left-box">
+            <div class="holder"> <span class="icon-halloween-october-31-calendar-page-sketch"></span>
+              <div class="text-hold"> <strong class="title">Upcoming Event</strong>
+                <p>"To Be Announced...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right-box">
+            <div class="holder"> <span class="icon-customer-service"></span>
+              <div class="text-hold"> <strong class="title">Service Times</strong>
+                <p>Sunday Service: 10:00am - 12:30pm</p>
+                <p> Friday Prayer Meeting: 7:00pm - 8:00pm&nbsp; &nbsp; &nbsp; </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--HOME ABOUT SECTION START-->
+    <section class="home-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="heading-left">
+              <h2>About Our Church</h2>
+              <span>WE LIVE TO PRAISE HIM</span> </div>
+            <strong class="title">Welcome to Victory Tabernacle International Ministries Inc., where our vision is to reach the lost with the message of love, acceptance and victory through Jesus Christ.</strong>
+            <p>We are committed to the teaching of the Word of God with simplicity and understanding. Our passion is to help people from all walks of life to discover their value and potential in God and equipping them to effectively reach others. We are glad that you want to be a part of what God is doing through our ministry.</p>
+            <a href="{% url 'about' %}" class="btn-style-1">Know More</a> </div>
+          <div class="col-md-6">
+            <div class="frame-1"><img src="{% static 'images/about-img-1 copy.jpg' %}" alt="img"></div>
+            <div class="frame-2"><img src="{% static 'images/about-img-2 copy.jpg' %}" alt="img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SERMONS SECTION START-->
+    <section class="sermons-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-12">
+            <div class="heading-left">
+              <h2>Sermons library</h2>
+              <span>Listen Our Sermons</span> </div>
+            <a href="sermons.html" class="btn-all">View All</a>
+            <div class="sermon-box">
+              <div class="round-frame"><img src="{% static 'images/sermon-img-1.jpg' %}" alt="img"></div>
+              <div class="holder"> <a href="#" class="btn-play"><span class="icon-play-button"></span></a>
+                <div class="text-box"> <a href="sermons-detail.html" class="title">Join us throughout the week</a> <b>6/26 S/2016 . Speaker: Pastor Johan Doe</b> </div>
+              </div>
+              <div class="holder-hover-1">
+                <h3><a href="sermons-detail.html">Have Faith. Trust in Lord and He Guide You</a></h3>
+                <strong class="title">6/26/2016 / Speaker: Pastor John Doe</strong>
+                <div class="mp3-player-box">
+                  <audio preload="auto" controls>
+                    <source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+                    <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+                    <source src="audio/BlueDucks_FourFlossFiveSix.wav">
+                  </audio>
+                </div>
+              </div>
+            </div>
+            <div class="sermon-box">
+              <div class="round-frame"><img src="{% static 'images/sermon-img-2.jpg' %}" alt="img"></div>
+              <div class="holder"> <a href="#" class="btn-play"><span class="icon-play-button"></span></a>
+                <div class="text-box"> <a href="sermons-detail.html" class="title">Have Faith. Trust in Lord and He</a> <b>6/26 S/2016 . Speaker: Pastor Johan Doe</b> </div>
+              </div>
+              <div class="holder-hover-1">
+                <h3><a href="sermons-detail.html">Have Faith. Trust in Lord and He Guide You</a></h3>
+                <strong class="title">6/26/2016 / Speaker: Pastor John Doe</strong>
+                <div class="mp3-player-box">
+                  <audio preload="auto" controls>
+                    <source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+                    <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+                    <source src="audio/BlueDucks_FourFlossFiveSix.wav">
+                  </audio>
+                </div>
+              </div>
+            </div>
+            <div class="sermon-box">
+              <div class="round-frame"><img src="{% static 'images/sermon-img-3.jpg' %}" alt="img"></div>
+              <div class="holder"> <a href="#" class="btn-play"><span class="icon-play-button"></span></a>
+                <div class="text-box"> <a href="sermons-detail.html" class="title">God’s Design For Marriage</a> <b>6/26 S/2016 . Speaker: Pastor Johan Doe</b> </div>
+              </div>
+              <div class="holder-hover-1">
+                <h3><a href="sermons-detail.html">Have Faith. Trust in Lord and He Guide You</a></h3>
+                <strong class="title">6/26/2016 / Speaker: Pastor John Doe</strong>
+                <div class="mp3-player-box">
+                  <audio preload="auto" controls>
+                    <source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+                    <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+                    <source src="audio/BlueDucks_FourFlossFiveSix.wav">
+                  </audio>
+                </div>
+              </div>
+            </div>
+            <div class="sermon-box">
+              <div class="round-frame"><img src="{% static 'images/sermon-img-4.jpg' %}" alt="img"></div>
+              <div class="holder"> <a href="#" class="btn-play"><span class="icon-play-button"></span></a>
+                <div class="text-box"> <a href="sermons-detail.html" class="title">Holy Spirit: Strategic Thinking</a> <b>6/26 S/2016 . Speaker: Pastor Johan Doe</b> </div>
+              </div>
+              <div class="holder-hover-1">
+                <h3><a href="sermons-detail.html">Have Faith. Trust in Lord and He Guide You</a></h3>
+                <strong class="title">6/26/2016 / Speaker: Pastor John Doe</strong>
+                <div class="mp3-player-box">
+                  <audio preload="auto" controls>
+                    <source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+                    <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+                    <source src="audio/BlueDucks_FourFlossFiveSix.wav">
+                  </audio>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    <!--GALLERY STYLE 1 START-->
+    <section class="gallery-style-1">
+      <div class="heading-center">
+        <h2>From The Gallery</h2>
+        <span><b><em>Here is our Galery</em></b></span> </div>
+      <div class="container-fluid">
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-1.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-2.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-3.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-4.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-5.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-6.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-7.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-8.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-9.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-10.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-11.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="frame"> <img src="{% static 'images/gallery/gallery-style-1-img-12.jpg' %}" alt="img">
+            <div class="caption">
+              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a> <strong class="title">Holy Spirit: Strategic </strong> <span>Chruch- Furniture</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--GALLERY STYLE 1 END--> 
+  </div>
+{% endblock %}

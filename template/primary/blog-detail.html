@@ -1,0 +1,177 @@
+{% extends "components/Main.html" %}
+{% load static %}
+{% block content %}
+<!--INNER BANNER START-->
+<div id="inner-banner">
+    <div class="container">
+      <div class="inner-banner-heading">
+        <h1>blog Detail</h1>
+        <ol class="breadcrumb">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li class="active">blog Detail</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!--INNER BANNER END-->
+  
+  <div id="main"> 
+    <!--BLOG SECTION START-->
+    <section class="blog-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 col-sm-8">
+            <div class="post-box">
+              <div class="frame"><img src="{% static 'images/blog-img-1.jpg' %}" alt="img"></div>
+              <div class="text-box"> <strong class="date">16 August 2016</strong>
+                <h2>The Lord, GOD Of Our Lifes</h2>
+                <p>Church tiam dictum Nunc enim Sed massa tellus aliquam, rhoncus venenatis quis suscipit ac libero. church aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos ptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeossociosqu ad litora torquent. </p>
+                <div class="btm-col">
+                  <div class="text-col"><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Comment</a> <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>2 Share</a> </div>
+                </div>
+                <span>Lord  Churchis a dolor sit amet, consectetur adipiscing elit. Ut molestie magna in nibh gravida sagittis. In quis nisl eu velit volutpat eleifend ac in massa. Donec .</span>
+                <p>GOD is a best  dolor sit amet, consectetur adipiscing elit. Ut molestie magna in nibh gravida sagittis. In quis nisl eu velit volutpat eleifend ac in massa. Donec elementum nulla vitae pellentesque aliquet. Nulla ullamcorper accumsan mi sit amet ornare. Cras vehicula efficitur maximus. Duis finibus tortor eu ipsum hendrerit mattis. Nullam in magna placerat, luctus magna eget, placerat libero. Vestibulum vitae sollicitudin risus, vel pellentesque lectus. Mauris vel lorem efficitur quam euismod porta.</p>
+                <div class="blockquote"> Church God dolor sit amet, consectetur adipiscing elit. Ut molestie magna in nibh gravida sagittis. In quis nisl eu.
+                  <div class="btm-col">
+                    <div class="thumb"><img alt="img" src="{% static 'images/blog-style-1-img-1.jpg' %}"></div>
+                    <div class="text-col"> <strong class="title">Rona Thanki, Head Volunteer</strong> </div>
+                  </div>
+                </div>
+                <p>Church ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie magna in nibh gravida sagittis. In quis nisl eu velit volutpat eleifend ac in massa. Donec elementum nulla vitae pellentesque aliquet. Nulla ullamcorper accumsan mi sit amet ornare. Cras vehicula efficitur maximus. Duis finibus tortor eu ipsum hendrerit mattis. Nullam in magna placerat, luctus magna eget, placerat libero. Vestibulum vitae sollicitudin risus, vel pellentesque lectus. </p>
+                <div class="share-box"> <strong class="title">share :</strong>
+                  <ul>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="comment-list">
+                <div class="media">
+                  <div class="media-left"> <a href="#"> <img src="{% static 'images/comment-img-1.jpg' %}" alt="img"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Maria fajita</h4>
+                    <span class="date">August 20, 2016 </span>
+                    <p>Aenean arcu tortor, suscipit vitae,Aenean arcu tortor, suscipit vitae,Aenean arcu  suscipit vitae,Aenean arcu torto pellentesque aliquet. Nulla ull.</p>
+                    <a href="#" class="reply">Reply</a> </div>
+                </div>
+                <div class="media">
+                  <div class="media-left"> <a href="#"> <img src="{% static 'images/comment-img-2.jpg' %}" alt="img"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Clark Jhone</h4>
+                    <span class="date">August 18, 2016 </span>
+                    <p>Aenean arcu tortor, suscipit vitae,Aenean arcu tortor, suscipit vitae,Aenean arcu  suscipit vitae,Aenean arcu torto pellentesque aliquet. Nulla ull.</p>
+                    <a href="#" class="reply">Reply</a>
+                    <div class="media">
+                      <div class="media-left"> <a href="#"> <img src="{% static 'images/comment-img-3.jpg' %}" alt="img"> </a> </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Kelly Khatai</h4>
+                        <span class="date">August 20, 2016 </span>
+                        <p>Aenean arcu tortor, suscipit vitae,Aenean arcu tortor, suscipit vitae,Aenean arcu  suscipit vitae,Aenean arcu torto pellentesque aliquet. Nulla ull.</p>
+                        <a href="#" class="reply">Reply</a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="detail-comment-form">
+                <div class="heading-left">
+                  <h2>Leave a comment</h2>
+                  <span>our comments</span> </div>
+                <form action="#" class="row">
+                  <div class="col-md-6">
+                    <input type="text" placeholder="Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="Email" required>
+                  </div>
+                  <div class="col-md-12">
+                    <textarea cols="12" rows="12" required placeholder="Comment"></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="submit" value="submit now">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <aside>
+              <div class="sidebar">
+                <div class="sidebar-box">
+                  <form action="#">
+                    <input type="text" placeholder="Search" required>
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </form>
+                </div>
+                
+                <div class="sidebar-box">
+                  <h3>Follow @ Instagram</h3>
+                  <div class="instagram-box">
+                    <ul>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-1.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-2.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-3.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-4.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-5.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-6.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-7.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-8.jpg' %}" alt="img"></a></li>
+                      <li><a href="#"><img src="{% static 'images/instagram-img-9.jpg' %}" alt="img"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sidebar-box">
+                  <h3>Latest Posts</h3>
+                  <div class="latest-post">
+                    <ul>
+                      <li>
+                        <div class="thumb"><a href="{% url 'blog-details' %}"><img src="{% static 'images/latest-post-img-1.jpg' %}" alt="img"></a></div>
+                        <div class="text-box"> <a href="{% url 'blog-details' %}">Join us throughout 
+                          the week  our city.</a> <span class="name">By adam jeky</span> </div>
+                      </li>
+                      <li>
+                        <div class="thumb"><a href="{% url 'blog-details' %}"><img src="{% static 'images/latest-post-img-2.jpg' %}" alt="img"></a></div>
+                        <div class="text-box"> <a href="{% url 'blog-details' %}">The Lord, GOD 
+                          Of Our Lifes</a> <span class="name">By jennifer sherry</span> </div>
+                      </li>
+                      <li>
+                        <div class="thumb"><a href="{% url 'blog-details' %}"><img src="{% static 'images/latest-post-img-3.jpg' %}" alt="img"></a></div>
+                        <div class="text-box"> <a href="{% url 'blog-details' %}">GOD Use Broken
+                          Things</a> <span class="name">By david martine</span> </div>
+                      </li>
+                      <li>
+                        <div class="thumb"><a href="{% url 'blog-details' %}"><img src="{% static 'images/latest-post-img-4.jpg' %}" alt="img"></a></div>
+                        <div class="text-box"> <a href="{% url 'blog-details' %}">We Should Know 
+                          About The End Time</a> <span class="name">By jhon clarck</span> </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sidebar-box">
+                  <h3>Calendar</h3>
+                  <div class="calendar-box">
+                    <div id='calendar'></div>
+                  </div>
+                </div>
+                <div class="sidebar-box">
+                  <h3>Subscribe to Newsletter</h3>
+                  <div class="newsletter-box">
+                    <form action="#">
+                      <input type="text" placeholder="Email" required>
+                      <input type="submit" value="Subscribe">
+                    </form>
+                  </div>
+                </div>
+                
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--BLOG SECTION END--> 
+  </div>
+{% endblock %}
